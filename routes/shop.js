@@ -7,7 +7,7 @@ router.get("/", (req, res, next) => {
   console.log(admminData.products);
   const products = admminData.products;
   // res.sendFile(path.join(__dirname, "../", "views", "shop.html"));
-  res.render('shop.ejs',{
+  res.render('shop',{
     prods:products,
     pageTitle: "Shop",
     path: '/',
